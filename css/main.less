@@ -707,7 +707,7 @@ a{
 					content: "";
 					display: block;
 					position: absolute;
-					width: 97px;
+					width: 90px;
 					height: 8px;
 					background: url(../images/tochka.png);
 					right: -90px;
@@ -750,7 +750,7 @@ a{
 					content: "";
 					display: block;
 					position: absolute;
-					width: 97px;
+					width: 90px;
 					height: 8px;
 					background: url(../images/tochka-l.png);
 					left: -90px;
@@ -764,6 +764,7 @@ a{
 	min-width: 980px;
 	padding-top: 45px;
 	background: url(../images/warranty.png);
+	padding-bottom: 80px;
 
 		h2{
 			text-align: center;
@@ -771,10 +772,25 @@ a{
 			font-size: 48px;
 			font-family: 'OpenSans-Bold';
 		}
+		.war-block{
+			margin-bottom: 60px;
+
+				&:nth-child(2) .war-desc{
+					padding-left: 0;
+				}
+				&:nth-child(2) .war-img{
+					margin-left: 10px;
+				}
+		}
 		.war-img{
-			width: 488px;
+			width: 480px;
 			height: 326px;
 			float: left;
+
+				img{
+					width: 480px;
+					height: 326px;
+				}
 		}
 		.war-container{
 			margin-top: 60px;
@@ -810,3 +826,81 @@ a{
 				}
 		}
 }
+
+.maps-block{
+	width: 100%;
+	min-width: 980px;
+	position: relative;
+
+		.maps-title{
+			position: absolute;
+			width: 100%;
+			top: 50px;
+			left: 0;
+			z-index: 10;
+			text-align: center;
+			font-size: 48px;
+			text-transform: uppercase;
+			font-family: 'OpenSans-Bold';
+		}
+}
+.order-bg{
+	height: 599px;
+	background: url(../images/form.jpg);
+}
+.bottom-block{
+	width: 100%;
+	min-width: 980px;
+	background-color: #065885;
+	position: relative;
+
+		&:before{
+			content: "";
+			display: block;
+			position: absolute;
+			width: 334px;
+			height: 85px;
+			background: url(../images/bottom-arrow.png)no-repeat;
+			left: 50%;
+			margin-left: -167px;
+			top: -81px;
+		}
+		.left-block{
+			  float: left;
+			  text-transform: uppercase;
+			  color: white;
+			  font-size: 18px;
+			  font-family: 'OpenSans-Bold';
+			  width: 365px;
+			  line-height: 22px;
+			  padding-top: 10px;
+			  padding-bottom: 17px;
+		}
+		.right-block{
+			  float: right;
+			  padding-top: 10px;
+			  margin-right: 0;
+
+			  	p{
+			  		font-size: 24px;
+					color: white;
+					font-family: 'OpenSans-Bold';
+					float: right;
+			  	}
+			  	.get-call{
+			  		  width: 245px;
+					  height: 45px;
+					  padding-top: 12px;
+					  margin-top: 5px;
+			  	}	
+		}
+		.logo{
+			  position: absolute;
+			  width: 145px;
+			  left: 50%;
+			  margin-left: -72.5px;
+			  z-index: 11;
+			  top: -60px;
+		}
+}
+

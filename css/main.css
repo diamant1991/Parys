@@ -665,7 +665,7 @@ a {
   content: "";
   display: block;
   position: absolute;
-  width: 97px;
+  width: 90px;
   height: 8px;
   background: url(../images/tochka.png);
   right: -90px;
@@ -703,7 +703,7 @@ a {
   content: "";
   display: block;
   position: absolute;
-  width: 97px;
+  width: 90px;
   height: 8px;
   background: url(../images/tochka-l.png);
   left: -90px;
@@ -714,6 +714,7 @@ a {
   min-width: 980px;
   padding-top: 45px;
   background: url(../images/warranty.png);
+  padding-bottom: 80px;
 }
 .warranty h2 {
   text-align: center;
@@ -721,10 +722,23 @@ a {
   font-size: 48px;
   font-family: 'OpenSans-Bold';
 }
+.warranty .war-block {
+  margin-bottom: 60px;
+}
+.warranty .war-block:nth-child(2) .war-desc {
+  padding-left: 0;
+}
+.warranty .war-block:nth-child(2) .war-img {
+  margin-left: 10px;
+}
 .warranty .war-img {
-  width: 488px;
+  width: 480px;
   height: 326px;
   float: left;
+}
+.warranty .war-img img {
+  width: 480px;
+  height: 326px;
 }
 .warranty .war-container {
   margin-top: 60px;
@@ -757,4 +771,77 @@ a {
   border-bottom: 4px solid #afa904;
   padding-top: 16px;
   margin-top: 30px;
+}
+.maps-block {
+  width: 100%;
+  min-width: 980px;
+  position: relative;
+}
+.maps-block .maps-title {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  left: 0;
+  z-index: 10;
+  text-align: center;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-family: 'OpenSans-Bold';
+}
+.order-bg {
+  height: 599px;
+  background: url(../images/form.jpg);
+}
+.bottom-block {
+  width: 100%;
+  min-width: 980px;
+  background-color: #065885;
+  position: relative;
+}
+.bottom-block:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 334px;
+  height: 85px;
+  background: url(../images/bottom-arrow.png) no-repeat;
+  left: 50%;
+  margin-left: -167px;
+  top: -81px;
+}
+.bottom-block .left-block {
+  float: left;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  font-family: 'OpenSans-Bold';
+  width: 365px;
+  line-height: 22px;
+  padding-top: 10px;
+  padding-bottom: 17px;
+}
+.bottom-block .right-block {
+  float: right;
+  padding-top: 10px;
+  margin-right: 0;
+}
+.bottom-block .right-block p {
+  font-size: 24px;
+  color: white;
+  font-family: 'OpenSans-Bold';
+  float: right;
+}
+.bottom-block .right-block .get-call {
+  width: 245px;
+  height: 45px;
+  padding-top: 12px;
+  margin-top: 5px;
+}
+.bottom-block .logo {
+  position: absolute;
+  width: 145px;
+  left: 50%;
+  margin-left: -72.5px;
+  z-index: 11;
+  top: -60px;
 }

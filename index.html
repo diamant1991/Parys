@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/main.less">
 	<link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/hover.css">
 	<script src="js/less.min.js"></script>
 	<script src="js/modernizr-2.8.3.min.js"></script>	
 </head>
@@ -22,18 +23,18 @@
 	<nav class="nav">
 		<div class="container">
 			<ul class="clearfix">
-				<li><a href="#" class="active">главная</a></li>
-				<li><a href="#">с нами работают</a></li>
-				<li><a href="#">ассортимент</a></li>
-				<li><a href="#">этапы работы</a></li>
-				<li><a href="#">преимущества</a></li>
-				<li><a href="#">гарантии</a></li>
-				<li><a href="#">контакты</a></li>
+				<li><a href="#top-block" class="active">главная</a></li>
+				<li><a href="#work_with_us">с нами работают</a></li>
+				<li><a href="#stock">ассортимент</a></li>
+				<li><a href="#how_we_work">этапы работы</a></li>
+				<li><a href="#why_we">преимущества</a></li>
+				<li><a href="#warranty">гарантии</a></li>
+				<li><a href="#maps-block">контакты</a></li>
 			</ul>
 		</div>
 	</nav><!-- navigation -->
 	
-	<div class="top-block">
+	<div class="top-block" id="top-block">
 		<div class="container clearfix">
 			<div class="left-block">
 				<p>Поставка охлажденной и свежемороженой рыбы и морепродуктов оптом по России</p>
@@ -46,7 +47,7 @@
 			<div class="right-block clearfix">
 				<p>8 (911) 220-02-22</p>
 				<div class="clear"></div>
-				<a href="#" class="link-btn get-call">Заказать звонок</a>
+				<a href="#" class="link-btn get-call pulse-grow">Заказать звонок</a>
 			</div>
 		</div>
 	</div><!-- top block -->
@@ -107,7 +108,7 @@
     	</div>
     </div><!-- order -->
 
-    <div class="work_with_us">
+    <div class="work_with_us" id="work_with_us">
     	<div class="container">
     		<h2>С нами работают</h2>
     		<div class="work-container clearfix">
@@ -244,7 +245,7 @@
     	</div>
     </div><!-- order -->
 
-    <div class="stock">
+    <div class="stock" id="stock">
     	<div class="container">
     		<h2>Наш ассортимент</h2>
     		<div class="stock-container clearfix">
@@ -375,7 +376,7 @@
     	</div>
     </div><!-- countries -->
 
-    <div class="how_we_work">
+    <div class="how_we_work" id="how_we_work">
     	<div class="container">
     		<h2>Как мы работаем</h2>
     		<div class="work-container clearfix">
@@ -454,7 +455,7 @@
     	</div>
     </div><!-- ho we work -->
 
-    <div class="why_we">
+    <div class="why_we" id="why_we">
     	<div class="container">
     		<h2>ПОЧЕМУ КЛИЕНТЫ ДОВОЛЬНЫ НАШЕЙ <br> РАБОТОЙ И РЕКОМЕНДУЮТ НАС ПАРТНЕРАМ</h2>
     		<div class="why_we-container clearfix">
@@ -543,7 +544,7 @@
     	</div>
     </div><!-- why we -->
 
-    <div class="warranty">
+    <div class="warranty" id="warranty">
         <div class="container">
             <h2>гарантии</h2>
             <div class="war-container">
@@ -557,9 +558,94 @@
                         <a href="#" class="link-btn">узнать подробнее</a>
                     </div>
                 </div>
+                <div class="war-block clearfix">
+                    <div class="war-desc">
+                        <header>Страховка</header>
+                        <p>Все расходы по страхованию берем на себя! Мы готовы поручится за сохранность товара при перевозке и соблюдение условий доставки.</p>
+                        <a href="#" class="link-btn">узнать подробнее</a>
+                    </div>
+                    <div class="war-img">
+                        <img src="images/war-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="war-block clearfix">
+                    <div class="war-img">
+                        <img src="images/war-3.jpg" alt="">
+                    </div>
+                    <div class="war-desc">
+                        <header>Мониторинг</header>
+                        <p>Наша компания еженедельно проводит мониторинг цен и предложений от импортёров и рыбодобывающих предприятий. <span>В результате Вы получаете лучшую стоимость, что позволит Вам сэкономить..</span></p>
+                        <a href="#" class="link-btn">узнать подробнее</a>
+                    </div> 
+                </div>
             </div>
         </div>
     </div><!-- warranty -->
+
+    <div class="maps-block" id="maps-block">
+        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=qwhLTar9C6qeglu5J1XMBTWH8HvsdHO3&width=100%&height=575"></script>
+        <div class="maps-title">
+            <div class="container">
+                Где мы находимся
+            </div>
+        </div>
+    </div><!-- maps -->
+
+    <div class="order order-bg">
+        <div class="container clearfix">
+            <div class="left-block">
+                <header>
+                    Оставьте заявку и <br> получите <span>Коммерческое предложение</span>
+                </header>
+                <div class="case-img"></div>        
+            </div>
+            <div class="right-block">
+                <form>
+                    <fieldset>
+                        <h3>Заполните форму</h3>
+                        <div class="input-block">
+                            <p>Введите Ваше имя</p>
+                            <input type="text">
+                        </div>
+                        <div class="input-block">
+                            <p>Введите Ваш e-mail</p>
+                            <input type="text">
+                        </div>
+                        <div class="input-block">
+                            <p>Введите Ваш телефон</p>
+                            <input type="text">
+                        </div>
+                        <div class="input-block">
+                            <p>Введите Ваш город</p>
+                            <input type="text">
+                        </div>
+                        <div class="input-block">
+                            <input type="submit" value="получить прайс" class="link-btn">
+                        </div>
+                        <div class="privacy">ГАРАНТИРУЕМ КОНФИДЕНЦИАЛЬНОСТЬ ВАШИХ ДАННЫХ</div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div><!-- order -->
+
+    <div class="bottom-block">
+        <div class="container clearfix">
+            <div class="left-block">
+                Поставка охлажденной и свежемороженой рыбы и морепродуктов оптом по России
+            </div>
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="right-block clearfix">
+                <p>8 (911) 220-02-22</p>
+                <div class="clear"></div>
+                <a href="#" class="link-btn get-call">Заказать звонок</a>
+            </div>
+        </div>
+    </div><!-- bottom block -->
 
 
 
