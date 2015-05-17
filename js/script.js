@@ -7,6 +7,21 @@ $(window).load(function() {
         
     });
 
+jQuery(function($){
+   $(".tel-input").mask("+7 (999) 999-9999");
+});
+
+wow = new WOW(
+    {
+      boxClass:     'wow',      
+      animateClass: 'animated', 
+      offset:       0,          
+      mobile:       true,       
+      live:         true        
+    }
+  )
+  wow.init();
+
 $( document ).ready(function() {
     $('a[href*=#]').bind("click", function(e){
       var anchor = $(this);
