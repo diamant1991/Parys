@@ -31,12 +31,6 @@ $( document ).ready(function() {
       e.preventDefault();
    });
 
-    /*$('.nav ul li a').click(function(e) {
-        e.preventDefault();
-        $('.nav ul li a').removeClass('active');
-        $(this).addClass('active');
-    });*/
-
     $(".work-block").hover(
       function () {
         $(this).children('.work-table').addClass('active');
@@ -72,5 +66,14 @@ $( document ).ready(function() {
         break;
       };
     };
+  });
+
+  $('.main-form').bind('submit', function(event) {
+    $('[type=text]').each(function() {
+      if(!$(this).val().length) {	
+	    event.preventDefault();
+        $(this).css('border', '2px solid red');
+      }
+    });
   });
 });

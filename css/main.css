@@ -522,7 +522,12 @@ a {
   position: relative;
 }
 .how_we_work .work-block:nth-child(5) {
-  margin-left: 200px;
+  margin-right: 130px;
+}
+.how_we_work .work-block:nth-child(5),
+.how_we_work .work-block:nth-child(6),
+.how_we_work .work-block:nth-child(7) {
+  float: right;
 }
 .how_we_work .work-block:first-child .work-table {
   background-color: #fef507;
@@ -540,8 +545,8 @@ a {
   right: -70px;
   top: 70px;
 }
-.how_we_work .work-block:nth-child(5):after,
-.how_we_work .work-block:nth-child(6):after {
+.how_we_work .work-block:nth-child(6):after,
+.how_we_work .work-block:nth-child(7):after {
   content: "";
   display: block;
   width: 69px;

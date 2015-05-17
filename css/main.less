@@ -559,9 +559,15 @@ a{
 			float: left;
 			margin-left: 70px;
 			position: relative;
-
+				
 				&:nth-child(5){
-					margin-left: 200px;
+					margin-right: 130px;
+				}
+
+				&:nth-child(5),
+				&:nth-child(6),
+				&:nth-child(7){
+					float: right;
 				}
 				&:first-child .work-table{
 					background-color: #fef507;
@@ -580,8 +586,8 @@ a{
 					top: 70px;
 				}
 
-				&:nth-child(5):after, 
-				&:nth-child(6):after{
+				&:nth-child(6):after, 
+				&:nth-child(7):after{
 					content: "";
 					display: block;
 					width: 69px;
@@ -602,6 +608,7 @@ a{
 					top: 80px;
 				}
 		}
+
 		.work-table{
 			width: 162px;
 			height: 162px;
