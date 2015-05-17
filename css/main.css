@@ -577,6 +577,10 @@ a {
   display: table-cell;
   vertical-align: middle;
 }
+.how_we_work .work-table.active {
+  background-color: #fef507;
+  border: 4px solid black;
+}
 .how_we_work .work-title {
   text-align: center;
   text-transform: uppercase;
