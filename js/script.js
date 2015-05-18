@@ -23,13 +23,14 @@ wow = new WOW(
   wow.init();
 
 $( document ).ready(function() {
-    $('a[href*=#]').bind("click", function(e){
-      var anchor = $(this);
-      $('html, body').stop().animate({
-         scrollTop: $(anchor.attr('href')).offset().top-40
-      }, 1200);
-      e.preventDefault();
-   });
+
+	$('input,textarea').focus(function(){
+	  $(this).data('placeholder',$(this).attr('placeholder'))
+	  $(this).attr('placeholder','');
+	});
+	$('input,textarea').blur(function(){
+	  $(this).attr('placeholder',$(this).data('placeholder'));
+	});
 
     $(".work-block").hover(
       function () {
@@ -68,12 +69,31 @@ $( document ).ready(function() {
     };
   });
 
-  $('.main-form').bind('submit', function(event) {
-    $('[type=text]').each(function() {
-      if(!$(this).val().length) {	
-	    event.preventDefault();
-        $(this).css('border', '2px solid red');
-      }
-    });
+  $(':input').blur(function() {
+    if($(this).val().length == 0) {
+      $(this)
+        .addClass('error')
+        .before('<span class="error">"Заполните поле"</span>');
+        
+    }
   });
+  $(':input').focus(function() {
+    $(this)
+      .removeClass('error')
+      .prev('span')
+      .remove();
+  });
+
+  $('.get-call-link').click(function(){
+  	 $('.form-mask').fadeIn(400);
+  	 $('.get-call').fadeIn(400);
+  })
+  $('.get-price-link').click(function(){
+  	 $('.form-mask').fadeIn(400);
+  	 $('.get-price').fadeIn(400);
+  })
+  $('.closed,.form-mask').click(function(){
+  	 $('.modal,.form-mask').fadeOut(400);
+  })
+
 });

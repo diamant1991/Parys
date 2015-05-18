@@ -113,11 +113,12 @@ a{
 					font-family: 'OpenSans-Bold';
 					float: right;
 				}
-				.get-call{
+				.get-call-link{
 					width: 245px;
 					height: 45px;
 					padding-top: 12px;
 					margin-top: 5px;
+					cursor: pointer;
 				}
 		}
 }
@@ -237,10 +238,12 @@ a{
 
 				.input-block{
 					margin-bottom: 10px;
+					position: relative;
 
 						p{
 							font-size: 14px;
 							font-family: 'OpenSans-Regular';
+							float: left;
 						}
 						input[type="text"]{
 							width: 100%;
@@ -250,7 +253,7 @@ a{
 							-webkit-border-radius: 5px;
 							-moz-border-radius: 5px;
 							border-radius: 5px;
-							font-size: 24px;
+							font-size: 28px;
 							font-family: 'OpenSans-Semibold';
 							text-align: center;
 							margin-top: 5px;
@@ -678,6 +681,7 @@ a{
 					text-transform: uppercase;
 					font-size: 24px;
 					font-family: 'OpenSans-Bold';
+					padding-top: 15px;
 				}
 				p{
 					margin-top: 22px;
@@ -885,11 +889,12 @@ a{
 					font-family: 'OpenSans-Bold';
 					float: right;
 			  	}
-			  	.get-call{
+			  	.get-call-link{
 			  		  width: 245px;
 					  height: 45px;
 					  padding-top: 12px;
 					  margin-top: 5px;
+					  cursor: pointer;
 			  	}	
 		}
 		.logo{
@@ -909,12 +914,14 @@ a{
 	height: 100%;
 	background: rgba(0, 0, 0, 0.85);
 	z-index: 101;
+	display: none;
 }
 .modal{
 	background-color: #138dcc;
 	position: fixed;
 	top: 20px;
 	z-index: 102;
+	display: none;
 }
 .get-price{
 	padding: 40px 30px 5px 30px;
@@ -956,10 +963,12 @@ a{
             	}
             	.input-block{
             		  margin-bottom: 10px;
+            		  position: relative;
 
             		  	p{
             		  		font-size: 14px;
   							font-family: 'OpenSans-Regular';
+  							float: left;
             		  	}
             		  	input[type="text"]{
             		  		width: 100%;
@@ -969,10 +978,11 @@ a{
 							  -webkit-border-radius: 5px;
 							  -moz-border-radius: 5px;
 							  border-radius: 5px;
-							  font-size: 24px;
+							  font-size: 28px;
 							  font-family: 'OpenSans-Semibold';
 							  text-align: center;
 							  margin-top: 5px;
+
             		  	}
             		  	.link-btn{
             		  		  outline: 0;
@@ -1011,12 +1021,12 @@ a{
 }
 
 .get-call{
-	padding: 40px 30px 30px 30px;
+	padding: 40px 30px 15px 30px;
 	width: 850px;
 	left: 50%;
 	margin-left: -425px;
 	top: 50%;
-	margin-top:-262.5px;
+	margin-top:-260px;
 		
 		.right-block{
 			float: right;
@@ -1060,14 +1070,16 @@ a{
 					  -webkit-border-radius: 5px;
 					  -moz-border-radius: 5px;
 					  border-radius: 5px;
-					  font-size: 24px;
+					  font-size: 30px;
 					  font-family: 'OpenSans-Semibold';
 					  text-align: center;
 					  margin-top: 5px;
+					  color: #181818;
     		  	}
     		  	p{
     		  		font-size: 14px;
-						font-family: 'OpenSans-Regular';
+					font-family: 'OpenSans-Regular';
+					float: left;
     		  	}
     		  	.link-btn{
     		  		  outline: 0;
@@ -1094,17 +1106,18 @@ a{
             	}
             	.input-block{
             		margin-bottom: 15px;
+            		position: relative;
             	}
-            	.tel-block input:nth-child(2){
+            	.tel-block .in-1{
             		width: 80px;
             		float: left;
             	}
-            	.tel-block input:nth-child(3){
+            	.tel-block .in-2{
             		width: 125px;
             		float: left;
             		margin-left: 5px;
             	}
-            	.tel-block input:nth-child(4){
+            	.tel-block .in-3{
             		width: 185px;
             		float: left;
             		margin-left: 5px;
@@ -1115,3 +1128,31 @@ a{
 }
 
 }
+
+.get-price-link{
+	cursor: pointer;
+}
+span.error{
+	font-family: 'OpenSans-Regular';
+	color: red;
+	float: right;
+}
+input.error, textarea.error {
+  border: 1px solid red !important;
+}
+
+
+.get-call .main-form input[type="text"]::-webkit-input-placeholder {color:#dfdfdf;}
+.get-call .main-form input[type="text"]::-moz-placeholder          {color:#dfdfdf;}
+.get-call .main-form input[type="text"]:-moz-placeholder           {color:#dfdfdf;}
+.get-call .main-form input[type="text"]:-ms-input-placeholder      {color:#dfdfdf;}
+
+.get-price .main-form .input-block input[type="text"]::-webkit-input-placeholder {color:#dfdfdf;}
+.get-price .main-form .input-block input[type="text"]::-moz-placeholder          {color:#dfdfdf;}
+.get-price .main-form .input-block input[type="text"]:-moz-placeholder           {color:#dfdfdf;}
+.get-price .main-form .input-block input[type="text"]:-ms-input-placeholder      {color:#dfdfdf;}
+
+.order .right-block .input-block input[type="text"]::-webkit-input-placeholder {color:#dfdfdf;}
+.order .right-block .input-block input[type="text"]::-moz-placeholder          {color:#dfdfdf;}
+.order .right-block .input-block input[type="text"]:-moz-placeholder           {color:#dfdfdf;}
+.order .right-block .input-block input[type="text"]:-ms-input-placeholder      {color:#dfdfdf;}
