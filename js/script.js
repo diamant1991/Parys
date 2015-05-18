@@ -73,15 +73,16 @@ $( document ).ready(function() {
     if($(this).val().length == 0) {
       $(this)
         .addClass('error')
-        .before('<span class="error">"Заполните поле"</span>');
-        
+        //.before('<span class="error">"Заполните поле"</span>');
+        .parent('.input-block').find('span.error').show();
     }
   });
   $(':input').focus(function() {
     $(this)
       .removeClass('error')
-      .prev('span')
-      .remove();
+      .parent('.input-block').find('span.error').hide();
+      //.prev('span')
+      //.remove();
   });
 
   $('.get-call-link').click(function(){
@@ -95,5 +96,12 @@ $( document ).ready(function() {
   $('.closed,.form-mask').click(function(){
   	 $('.modal,.form-mask').fadeOut(400);
   })
+
+  $(document).keyup(function(d) {
+    if (d.keyCode == 27) {
+        $('.form-mask').fadeOut(400);
+        $('.modal').fadeOut(400);
+    }
+});
 
 });
