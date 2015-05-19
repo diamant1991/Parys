@@ -85,6 +85,16 @@ $( document ).ready(function() {
       //.remove();
   });
 
+  $('form').bind('submit', function(event) {
+    $(this).find('[type=text]').each(function() {
+      if(!$(this).val().length) { 
+      event.preventDefault();
+        $(this).addClass('error');
+        $(this).parent('.input-block').find('span.error').show();
+      }
+    });
+  });
+
   $('.get-call-link').click(function(){
   	 $('.form-mask').fadeIn(400);
   	 $('.get-call').fadeIn(400);
@@ -92,6 +102,10 @@ $( document ).ready(function() {
   $('.get-price-link').click(function(){
   	 $('.form-mask').fadeIn(400);
   	 $('.get-price').fadeIn(400);
+  })
+  $('.show-more-link').click(function(){
+     $('.form-mask').fadeIn(400);
+     $('.show-more').fadeIn(400);
   })
   $('.closed,.form-mask').click(function(){
   	 $('.modal,.form-mask').fadeOut(400);
