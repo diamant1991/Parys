@@ -49,7 +49,7 @@ $( document ).ready(function() {
 var headerHeight = $('.nav').height();
   $(".nav li a").click(function(e) {
     var offsetTop = $("#"+$(this).data("target")).offset().top - headerHeight;
-    $('html, body').animate({scrollTop: offsetTop}, 1000);
+    $('html, body').animate({scrollTop: offsetTop}, 500);
   });
   $(document).scroll(function(){
     var offsets = [];
